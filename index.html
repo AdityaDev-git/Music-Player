@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sideNav">
+        <h1>PlayIt</h1>
+        <div class="sideIcon"><img src="/icon/home.png" alt=""><p>Home</p></div>
+        <div class="sideIcon"><img src="/icon/Search.png" alt=""><p>Discover</p></div>
+        <div class="sideIcon"><img src="/icon/Music.png" alt=""><p>Genre</p></div>
+        <div class="sideIcon"><img src="/icon/Headphones.png" alt=""><p>Top Charts</p></div>
+        <div class="sideIcon"><img src="/icon/Mic.png" alt=""><p>Podcast</p></div>
+        <h4>Library</h4>
+        <div class="sideIcon"><img src="/icon/Starh.png" alt=""><p>Favorites</p></div>
+        <div class="sideIcon"><img src="/icon/Video.png" alt=""><p>Playlist</p></div>
+      </div>
+      <div class="right">
+        <div class="hero">
+          <img src="/images/hero.png" alt="" />
+          <p>Top hits of the week</p>
+          <h4>
+            Listen to latest Music for FREE and download MP3 songs online in HD quality. Stream 15 Million+ New & Popular MP3 songs in 14+ languages
+            only on PlayIt.
+          </h4>
+        </div>
+        <div class="list">
+
+          <div>
+            <h4>recent songs played</h4>
+            <div class="songItem">
+              <img src="/songs/c1.jpg" alt="1" />
+              <span>Blade Runner Blues</span>
+              <span class="songlistplay">
+                <span class="timeStamp">05:34 <i id="0" class="songPlay fa-solid fa-play"></i> </span></span>
+              </div>
+              
+              <div class="songItem">
+                <img src="/songs/c2.jpg" alt="1" />
+                <span>legend of zelda</span>
+                <span class="songlistplay">
+                <span class="timeStamp">00:00 <i id="1" class="songPlay fa-solid fa-play"></i> </span></span>
+            </div>
+            
+            <div class="songItem">
+              <img src="/songs/c3.jpg" alt="1" />
+              <span>dragonet</span>
+              <span class="songlistplay">
+                <span class="timeStamp">00:00 <i id="2" class="songPlay fa-solid fa-play"></i> </span></span>
+              </div>
+              
+              <div class="songItem">
+                <img src="/songs/c4.jpg" alt="1" />
+                <span>highschool dxd</span>
+                <span class="songlistplay">
+                  <span class="timeStamp">00:00 <i id="3" class="songPlay fa-solid fa-play"></i> </span></span>
+                </div>
+              </div>
+                
+          <div class="p-top">
+                <div class="songItem">
+                  <img src="/songs/c5.jpg" alt="1" />
+                  <span>GTA san andres</span>
+                  <span class="songlistplay">
+                    <span class="timeStamp">05:34 <i id="4" class="songPlay fa-solid fa-play"></i> </span></span>
+                  </div>
+                  
+                  <div class="songItem">
+                    <img src="/songs/c6.jpg" alt="1" />
+                    <span>Roll up</span>
+                    <span class="songlistplay">
+                    <span class="timeStamp">00:00 <i id="5" class="songPlay fa-solid fa-play"></i> </span></span>
+                </div>
+                
+                <div class="songItem">
+                  <img src="/songs/c7.jpg" alt="1" />
+                  <span>JRE Podcast</span>
+                  <span class="songlistplay">
+                    <span class="timeStamp">00:00 <i id="6" class="songPlay fa-solid fa-play"></i> </span></span>
+                  </div>
+                  
+                  <div class="songItem">
+                    <img src="/songs/c8.jpg" alt="1" />
+                    <span>GOT Theme</span>
+                    <span class="songlistplay">
+                      <span class="timeStamp">00:00 <i id="7" class="songPlay fa-solid fa-play"></i> </span></span>
+                    </div>
+              </div>  
+
+          <div class="p-top">
+                    <div class="songItem">
+                      <img src="/songs/c9.jpg" alt="1" />
+                      <span>Blade Runner Blues</span>
+                      <span class="songlistplay">
+                        <span class="timeStamp">05:34 <i id="8" class="songPlay fa-solid fa-play"></i> </span></span>
+                      </div>
+                      
+                      <div class="songItem">
+                        <img src="/songs/c10.jpg" alt="1" />
+                        <span>legend of zelda</span>
+                        <span class="songlistplay">
+                        <span class="timeStamp">00:00 <i id="9" class="songPlay fa-solid fa-play"></i> </span></span>
+                    </div>
+                    
+                    <div class="songItem">
+                      <img src="/songs/c11.jpg" alt="1" />
+                      <span>dragonet</span>
+                      <span class="songlistplay">
+                        <span class="timeStamp">00:00 <i id="10" class="songPlay fa-solid fa-play"></i> </span></span>
+                      </div>
+                      
+                      <div class="songItem">
+                        <img src="/songs/c12.jpg" alt="1" />
+                        <span>highschool dxd</span>
+                        <span class="songlistplay">
+                          <span class="timeStamp">00:00 <i id="11" class="songPlay fa-solid fa-play"></i> </span></span>
+                        </div>
+              </div>
+
+              </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <input type="range" name="range" id="progressBar" value="0" min="0" max="100" />
+      <div class="icons">
+        <i class="fa-solid fa-backward" id="previous"></i>
+        <i class="fa-solid fa-play" id="masterPlay"></i>
+        <i class="fa-solid fa-forward" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img src="/5uwq.gif" width="42px" alt="" id="gif" />
+        <span id="mSongName">Blade runner</span>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/e181db0828.js" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

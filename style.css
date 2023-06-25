@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    color: aliceblue;
+    display: flex;
+}
+.sideNav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    padding: 7px;
+    background-color: rgb(23, 23, 23);
+}
+.sideIcon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.sideIcon:hover{
+    background-color: brown;
+}
+.sideIcon img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+.right{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero{
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    position: relative;
+}
+.hero img{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 10px; */
+}
+.hero p{
+    position: absolute;
+    right: 40px;
+    top: 0;
+    font-weight: 700;
+    font-size: 64px;
+}
+.hero h4 {
+    position: absolute;
+    right: 36px;
+    top: 138px;
+    text-align: right;
+    left: 30rem;
+}
+.list{
+    width: 90%;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.p-top{
+    padding-top: 50px;
+}
+.songItem{
+    height: 50px;
+    display:flex ;
+    background-color: aliceblue;
+    width: 355px;
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.songItem img{
+    width: 50px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 12px;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(90deg, #434343 0%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+    flex-direction: column;
+}
+#progressBar{
+    width: 85vw;
+    cursor: pointer;
+}
+.timeStamp{
+    margin: 0 20px;
+}
+
+.icons{
+    margin-top: 34px;
+}
+.icons i{
+    padding: 0 5px;
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 7vw;
+}
+.songInfo img{
+    width: 100px;
+    height: 32px;
+    opacity: 0;
+    transition: opacity is ease-in;
+}
+.songPlay{
+    cursor: pointer;
+}
