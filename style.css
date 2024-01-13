@@ -14,6 +14,10 @@ html body{
     color: aliceblue;
     display: flex;
 }
+
+
+
+/* sidebar  */
 .sideNav{
     position: fixed;
     top: 0;
@@ -39,6 +43,10 @@ html body{
     width: 24px;
     margin-right: 10px;
 }
+
+
+
+/* hero img  */
 .right{
     position: fixed;
     top: 0;
@@ -73,27 +81,21 @@ html body{
     text-align: right;
     left: 30rem;
 }
+
+
+
+/* song list  */
 .list{
     width: 90%;
     height: 350px;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
-.p-top{
-    padding-top: 50px;
-}
-.songItem{
-    height: 50px;
-    display:flex ;
-    background-color: aliceblue;
-    width: 355px;
-    color: black;
-    margin: 12px 0px;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 30px;
-    font-family: 'Poppins', sans-serif;
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(3,355px);
+    gap: 1rem 1.5rem;
 }
 .songItem img{
     width: 50px;
@@ -101,6 +103,29 @@ html body{
     margin: 0 10px;
     border-radius: 12px;
 }
+.songItem{
+    position: relative;
+    display:flex ;
+    align-items: center;
+    height: 50px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.songlistplay{
+ position: absolute;
+ right: 0;
+}
+.fa-play, .fa-pause{
+    margin: 0 10px;
+}
+.fa-star{
+    cursor: pointer;
+    color: red;
+}
+
+/* music cotroles */
 .bottom{
     position: absolute;
     bottom: 0;
